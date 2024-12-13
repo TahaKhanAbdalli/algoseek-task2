@@ -1,0 +1,56 @@
+<div class="landing-page">
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <span>|</span>
+      <a href="#">Sobre</a>
+      <span>|</span>
+      <a href="#">Cadastro</a>
+      <span>|</span>
+      <a href="#">Login</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CIÊNCIAS<br>HUMANAS</h1>
+      <button class="btn-primary">Começar</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/img1.png" alt="People with globe">
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-box">
+      <p class="question">Prova com 10 questões gerais sobre a matéria de ciências humanas.</p>
+      <h2>O que são as Ciências Humanas?</h2>
+      <p class="description">
+        A área das Ciências Humanas é o conjunto de ciências que tem como objeto de estudo o ser humano. Entre as ciências da área de humanas, estão a Filosofia, Sociologia ou Ciências Sociais, História, Geografia, Letras, Teologia, Antropologia, Comunicação Social, Psicologia, Linguística, Artes, entre outras.
+      </p>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="registration">
+    <h2>Cadastro</h2>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <input type="text" formControlName="name" placeholder="nome 15">
+      <input type="email" formControlName="email" placeholder="email">
+      <input type="password" formControlName="password" placeholder="senha">
+      <p class="login-link">Já tem uma conta?</p>
+      <button type="submit" class="btn-primary">Concluir</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wave"></div>
+    <p>© Vinícius Neves Costa</p>
+  </footer>
+</div>
+
